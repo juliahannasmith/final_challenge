@@ -1,11 +1,21 @@
 function checkPrime(number) {
-    (i == 2; i <= (number) / 2; i++)
+    if ((number) <= 1 || (number) )
+    for (i = 2; i <= (number) / 2; i++) {
         if ((number) % i == 0) {
-            return "not prime"
+            return "not prime";
         }
-    return "prime"
+    }
+    return "prime";
 }
 
-function factorTree(number){
-
+function timesTable(number){
+document.write ("<table border = 1>");
+for (i = 1 ; i < (number) + 1 ; i++){
+    document.write("<tr>");
+    for (j = 1 ; j < (number) + 1; j++) {
+        document.write ("<td>" , i*j , "</td>");
+    }
+    document.write ("</tr>");
+}
+document.write ("</table>");
 }
